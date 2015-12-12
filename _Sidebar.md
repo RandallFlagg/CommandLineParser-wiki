@@ -1,4 +1,4 @@
-* [Home (Quick Start](https://github.com/j-maly/CommandLineParser/wiki)
+* [Home (Quick Start)](https://github.com/j-maly/CommandLineParser/wiki)
 * [User Guide](https://github.com/j-maly/CommandLineParser/wiki/User-Guide)
 * [Command line format](https://github.com/j-maly/CommandLineParser/wiki/Command-line-format)
 * [Argument types](https://github.com/j-maly/CommandLineParser/wiki/Argument-types)
