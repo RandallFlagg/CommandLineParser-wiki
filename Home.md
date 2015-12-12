@@ -1,6 +1,8 @@
 ## Quick Start
 
-Using the CommandLineParser is intuitive. Let's say you want to support
+Using the CommandLineParser is intuitive. This Quick Start covers the basics, for detailed information and advanced topics see the links on the right. 
+
+Let's say you want to support
  1. a switch (`-s` or `--show`)
  2. an argument which requires a value of type decimal (`-v 1.0` or `--version 1.0`) 
  3. an argument which allows to choose from 3 predefined values: red, green or blue (`-c red` or `--color red`)
@@ -96,7 +98,7 @@ See **TBD** for more details on declarative syntax.
 
 The library offers a set of argument types which will cover the most use cases, but you can extend it with your own type of attributes. See **TBD** on how to do that. 
 
-### Combination of attributes
+### Combinations of attributes
 
 `CommandLineParser` can be set up so that only certain combination of attributes are valid. You can do this with `ArgumentCertification`. This will even be reflected in ShowUsage command. See **TBD** for details. 
 
