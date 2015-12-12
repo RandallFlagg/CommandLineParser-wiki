@@ -64,3 +64,31 @@ Finder.exe -dx
 ``` 
 
 You can also specify whether argument names should be case sensitive (CommandLineParser.IgnoreCase)
+
+## Parser settings & properties 
+
+ * `Arguments` - list of arguments accepted by the parser. This can be populated directly by subclasses of `Argument` or it can be obtained by examining an object decorated with `ArgumentAttributes` (see [Attributes and declarative syntax](https://github.com/j-maly/CommandLineParser/wiki/Attributes-&--declarative-syntax))
+* `Certifications` - list of argument certifications, see [Combinations of arguments](https://github.com/j-maly/CommandLineParser/wiki/Combinations-of-arguments)) 
+* `ShowUsageHeader` - text printed at the beginning of argument usage description displayed to the user of the application 
+* `ShowUsageFooter` - text printed at the end of argument usage description displayed to the user of the application 
+* `ShowUsageCommands` - if the user supplies one of these values as a command line argument, show usage information will be displayed. Contains `help`, `/?` and `--help` by default. 
+* `ShowUsageOnEmptyCommandline` - when set to true, show usage information is printed when the user does not supply any arguments 
+* `CheckMandatoryArguments` - when set to true (default) and a mandatory argument is missing on the command line, an exception is thrown
+* `CheckArgumentCertifications` - when set to true (default), all `Certifications` must pass during parsing, otherwise an exception is thrown
+* `AllowShortSwitchGrouping` - when set to true (default), multiple switch arguments can be collapsed together, e.g `-a -b -c` can be shortened to `-abc`
+* `AcceptSlash` - argument start with `/` character, e.g. `/distinct` (default is `true`)
+* `AcceptHyphen` - argument start with `-`/`--` character, e.g. `--distinct` (default is `true`)
+* `IgnoreCase` - argument names are not case sensitive (default is `false`)
+* `AcceptEqualSignSyntaxForValueArguments` - when set to true value arguments are separated by `=` sign instead of a space, e.g. the user should write --level=3 instead of --level 3  (default is `false`)
+* `ParsingSucceeded` - will contain `true`/`false` after parsing is finished
+
+Public parser methods: 
+
+* `ParseCommandLine` - starts parsing (arguments must be set up beforehand)
+* `ExtractArgumentAttributes` - use this to read ArgumentAttribute declaration from a class (see [Attributes and declarative syntax](https://github.com/j-maly/CommandLineParser/wiki/Attributes-&--declarative-syntax))
+* `PrintUsage` - prints usage information to an output writer
+* `ShowUsage` - prints usage information to console
+* `ShowParsedArguments` - prints information about the parsed arguments (call this after `ParseCommandLine`)
+* `FillDescFromResource` - use this to populate argument descriptions from a resource file, see ([Localization, resources](https://github.com/j-maly/CommandLineParser/wiki/Localization,-resources))
+
+
