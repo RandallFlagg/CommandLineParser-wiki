@@ -60,7 +60,7 @@ Have fun!
 ```
 
 You can also add long descriptions, use resource files to store them (see TBD) and even use localization (see TBD). 
-You can also tell the parser to print the Usage info automatically when no arguments are supplied (see `ShowUsageOnEmptyCommandline` property)
+You can also tell the parser to print the Usage info automatically when no arguments are supplied (see `ShowUsageOnEmptyCommandline` property). Usage info is also printed when the user uses `--help`, `/?` or `/help` argument.
 
 ### Attributes & declarative syntax
 
