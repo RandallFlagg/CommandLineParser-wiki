@@ -1,5 +1,3 @@
-# CommandLineParser User Guide - examples, advanced scenarios
-
 Supported command line formats
 Common settings
 Supported argument types
