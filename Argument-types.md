@@ -19,7 +19,7 @@ Finder.exe --subdirectories 3
 
 ### Multiple values
 
-If you want to allow multiple values for one argument, set 'AllowMultiple' property to true. To get the parsed values, use `ValueArgument.Values` collection. If you are using attributes (declarative syntax), you need to use the attribute on an array or list property/field
+If you want to allow multiple values for one argument, set `AllowMultiple` property to true. To get the parsed values, use `ValueArgument.Values` collection. If you are using attributes (declarative syntax), you need to use the attribute on an array or list property/field
 
 ## EnumeratedValueArgument
 
