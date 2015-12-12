@@ -17,6 +17,10 @@ Finder.exe --subdirectories 3
 ```
 `ValueArgument` class takes care of parsing the value and converting it to the right type. For built-in C# types (bool, int, double, string, char etc.) the static .NET function Parse is used. If you want to use some other type (your class or struct for example) as arguments value, you have to specify a conversion routine that converts string on the command line to your type. 
 
+### Multiple values
+
+If you want to allow multiple values for one argument, set 'AllowMultiple' property to true. To get the parsed values, use `ValueArgument.Values` collection. If you are using attributes (declarative syntax), you need to use the attribute on an array or list property/field
+
 ## EnumeratedValueArgument
 
 `EnumeratedValueArgument` is similar to `ValueArgument`, only its values must belong to a user defined set of possible values. Remark - if you want to map the set of values to your `enum` type, you can use ValueArgument<TValue> where `TValue` is your `enum` type instead. 
