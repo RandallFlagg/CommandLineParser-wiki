@@ -6,7 +6,7 @@ Let's say you want to support
  1. a switch (`-s` or `--show`)
  2. an argument which requires a value of type decimal (`-v 1.0` or `--version 1.0`) 
  3. an argument which allows to choose from 3 predefined values: red, green or blue (`-c red` or `--color red`)
-(For detailed information about argument types and settings, see **TBD**)
+(For detailed information about argument types and settings, see [Argument Types](https://github.com/j-maly/CommandLineParser/wiki/Argument-types))
 
 ### Setup
 
@@ -59,7 +59,7 @@ Usage:
 Have fun!
 ```
 
-You can also add long descriptions, use resource files to store them (see TBD) and even use localization (see TBD). 
+You can also add long descriptions, use resource files to store them (see [Resources](https://github.com/j-maly/CommandLineParser/wiki/Localization,-resources)) and even use localization (see [Localization](https://github.com/j-maly/CommandLineParser/wiki/Localization,-resources)). 
 You can also tell the parser to print the Usage info automatically when no arguments are supplied (see `ShowUsageOnEmptyCommandline` property). Usage info is also printed when the user uses `--help`, `/?` or `/help` argument.
 
 ### Attributes & declarative syntax
@@ -92,14 +92,14 @@ if (p.version > 2)
 }
 ```
 
-See **TBD** for more details on declarative syntax. 
+See [Attributes & declarative syntax](https://github.com/j-maly/CommandLineParser/wiki/Attributes-&--declarative-syntax) for more details on declarative syntax. 
 
 ### Extensibility
 
-The library offers a set of argument types which will cover the most use cases, but you can extend it with your own type of attributes. See **TBD** on how to do that. 
+The library offers a set of argument types which will cover the most use cases, but you can extend it with your own type of attributes. See [Extensibility & Custom Arguments](https://github.com/j-maly/CommandLineParser/wiki/Extensibility-&-custom-arguments) on how to do that. 
 
 ### Combinations of attributes
 
-`CommandLineParser` can be set up so that only certain combination of attributes are valid. You can do this with `ArgumentCertification`. This will even be reflected in ShowUsage command. See **TBD** for details. 
+`CommandLineParser` can be set up so that only certain combination of attributes are valid. You can do this with `ArgumentCertification`. This will even be reflected in ShowUsage command. See [Combinations of arguments](https://github.com/j-maly/CommandLineParser/wiki/Combinations-of-arguments) for details. 
 
 
