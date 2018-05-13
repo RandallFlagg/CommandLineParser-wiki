@@ -42,11 +42,11 @@ public static void main(string[] args) {
 
 ### Show Usage 
 You might want to show an overview of all the arguments your application supports. This is very easy, the following code: 
-'''csharp
+```csharp
 parser.ShowUsageHeader = "Here is how you use the app: ";
 parser.ShowUsageFooter = "Have fun!";
 parser.ShowUsage();
-'''
+```
 will print: 
 ```
 Here is how you use the app:
